@@ -1,0 +1,51 @@
+body {
+    background-image: url("table.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    text-align: center;
+    color:white;
+}
+
+h1 {
+    color: goldenrod;
+    text-align: center;
+}
+
+h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#message-el {
+    color:black;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#cards-el {
+    color:darksalmon;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#sum-el {
+    color:darksalmon;
+    text-align: center;
+    font-weight: bolder;
+}
+
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
