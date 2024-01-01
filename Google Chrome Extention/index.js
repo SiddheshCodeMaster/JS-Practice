@@ -16,7 +16,15 @@ function renderLeads() {
     
     for(var i=0; i < myLeads.length; i++)
     {
-        listItems += "<li>" + myLeads[i] + "</li>";
+        // listItems += "<li>" + "<a href=' " + myLeads[i] + "' target='_blank'>" + myLeads[i] + "</a>" + "</li>" ;
+        // Implementation example of Template Strings:
+        listItems += 
+        `<li>
+            <a href='${myLeads[i]}' target='_blank'>
+            ${myLeads[i]}
+            </a>
+        </li>`
+        
         // console.log(myLeads[i]);
         // ulEl.textContent += myLeads[i] + " ";
         // ulEl.innerHTML += "<li>" + myLeads[i] + " " + "</li>";
