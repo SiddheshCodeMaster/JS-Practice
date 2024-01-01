@@ -6,15 +6,23 @@ const ulEl = document.getElementById("ul-el");
  
 inputBtn.addEventListener("click",function() {
     console.log("Button Cliked by Event Listener");
-    myLeads.push("www.awesomelead.com");
-    myLeads.push(input_el.value)
-    
-    console.log(myLeads);
+    myLeads.push(input_el.value);
+    input_el.value = "";
+    renderLeads();
+})
 
+function renderLeads() {
+    let listItems = "";
+    
     for(var i=0; i < myLeads.length; i++)
     {
+        listItems += "<li>" + myLeads[i] + "</li>";
         // console.log(myLeads[i]);
-        ulEl.textContent += myLeads[i] + " ";
+        // ulEl.textContent += myLeads[i] + " ";
+        // ulEl.innerHTML += "<li>" + myLeads[i] + " " + "</li>";
+        // const li = document.createElement("li");
+        // li.textContent = myLeads[i];
+        // ulEl.append(li);
     }
-    
-})
+    ulEl.innerHTML = listItems;
+}
